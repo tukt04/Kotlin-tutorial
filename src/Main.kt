@@ -1,9 +1,12 @@
+import kotlin.math.PI
 
 fun main(){
     // practice1()
     // practice2()
     // practice3()
-    practice4()
+    // practice4()
+    println(circleArea(2))
+    println(circleArea2(2))
 }
 
 // Complete the code to make the program print "Mary is 20 years old" to standard output
@@ -89,3 +92,13 @@ fun practice4(){
         if(word.startsWith('l')) println(word)
     }
 }
+
+
+fun circleArea(r: Int): Double {
+    return r * r * PI
+}
+
+fun circleArea2(r: Int) = r * r * PI
+
+fun intervalInSeconds(hours: Int = 0, minutes: Int = 0, seconds: Int = 0) =
+    ((hours * 60) + minutes) * 60 + seconds
